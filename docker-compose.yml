@@ -1,0 +1,23 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: ecom-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  hbase:
+    image: harisekhon/hbase:2.1
+    container_name: ecom-hbase
+    hostname: hbase
+    ports:
+      - "16010:16010"
+      - "9090:9090"
+      - "2181:2181"
+      - "16000:16000"
+      - "16020:16020"
+      - "16030:16030"
+
+volumes:
+  mongo_data:

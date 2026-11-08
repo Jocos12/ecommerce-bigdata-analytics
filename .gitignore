@@ -1,0 +1,7 @@
+venv/
+data/
+__pycache__/
+*.pdf
+*.pyc
+spark-warehouse/
+metastore_db/

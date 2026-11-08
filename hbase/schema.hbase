@@ -1,0 +1,2 @@
+create 'user_sessions', {NAME => 'info', VERSIONS => 1}, {NAME => 'pages', VERSIONS => 1}
+create 'product_metrics', {NAME => 'm', VERSIONS => 1}
